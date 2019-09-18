@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    background-color: white;
+    background-image: url("img/white-bg.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.logo{
+    background-color: #ee3643;
+    background-image: url("img/logo-bg.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.main-header{
+    font-size: 17px;
+    color: #f1f2f4;
+    background-image: url("img/header-main.png");
+}
+
+
+.button{
+    color: #f1f2f4;
+    text-decoration: none;
+}
+
+.button-nav{
+    color: #f1f2f4;
+    text-decoration: none;
+    background-color: #32425c;
+}
+.button-nav:hover{
+    color: #ffffff;
+    background-color: #293449;
+}
+.button-nav:active{
+    color: #8e939c;
+    background-color: #1d2739;
+}
+.button:active{
+    opacity: 0.5;
+}
+.make-order{
+    background-color: #63a63e;
+}
+
+.secondary-header{
+    background-color: #f3f7f8;
+}
+
+.tagline{
+    font-family: 'Cuprum', sans-serif;
+    font-style: italic;
+    color: #ee3643;
+    font-size: 16px;
+}
+
+.phone{
+    font-size: 21px;
+    color: #ee3643;
+    border: 2px solid white;
+}
+
+.address{
+    font-size: 14px;
+    color: #32425c;
+}
+
+.registration{
+    color: black;
+    font-size: 21px;
+    text-decoration: none;
+
+    background-color: white;
+}
+
+.registration:hover{
+    color: #ee3643;
+}
+
+.registration:active{
+    color: #c7c7c7;
+}
+
+.navigation{
+    list-style: none;
+
+    color: white;
+    font-size: 17px;
+
+    background-image: url("img/header-navigation.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+h2{
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 36px;
+    font-family: 'Cuprum', sans-serif;
+    color: #32425c;
+    text-transform: uppercase;
+
+}
+
+.advantages{
+    background-image: url("img/advantages.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.advantages-tagline{
+    font-family: 'Cuprum', sans-serif;
+    font-size: 13px;
+}
+
+.advantages-list{
+    list-style: none;
+}
+.advantages-button {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 21px;
+    color: #f1f2f4;
+    font-weight: bold;
+
+    background-color: #32425c;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.advantages-button:hover{
+    color: white;
+    background-color: #293449;
+}
+
+.company h2{
+    font-family: 'Cuprum', sans-serif;
+    font-weight: bold;
+}
+
+.transport-company{
+    list-style: none;
+
+    font-size: 18px;
+}
+
+.red-button{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #ee3643;
+    border-radius: 2px;
+}
+
+.main-footer{
+
+    background-image: url("img/main-footer.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+footer{
+    color: white;
+    font-size: 18px;
+    font-family: 'Cuprum', sans-serif;
+}
+.nav{
+    list-style: none;
+}
+.no-underline{
+    text-decoration: none;
+}
+.no-underline:hover{
+    text-decoration: underline;
+}
+.nav >.no-underline:active{
+    color: #929caa;
+}
+.yellow{
+    color: #f1c77e;
+}
+
+.secondary-footer{
+    background-image: url("img/second-footer.png");
+    /*background-repeat: no-repeat;*/
+    background-position: 0 0;
+}
+
+.socials{
+    list-style: none;
+}
