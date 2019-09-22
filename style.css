@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
     background-color: white;
     background-image: url("img/white-bg.png");
@@ -12,14 +13,18 @@ body{
     line-height: 24px;
 }
 
-.logo{
-    background-color: #ee3643;
-    background-image: url("img/logo-bg.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
+*, *:after, *:before{
+    box-sizing: inherit;
 }
 
+
 .main-header{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 940px;
+    min-height: 42px;
     font-size: 17px;
     color: #f1f2f4;
     background-image: url("img/header-main.png");
@@ -27,11 +32,30 @@ body{
 
 
 .button{
+    height: 0;
+    padding: 12px 0;
     color: #f1f2f4;
     text-decoration: none;
+    margin-right: 45px;
+}
+
+.logo{
+    text-align: center;
+    vertical-align: center;
+    padding: 14px 0;
+    width: 220px;
+    height: 42px;
+    background-image: url("img/logo-bg.png");
+    background-position: 0 0;
+}
+
+
+.button:hover{
+    color: white;
 }
 
 .button-nav{
+    padding: 19px 30px 16px 32px;
     color: #f1f2f4;
     text-decoration: none;
     background-color: #32425c;
@@ -48,7 +72,13 @@ body{
     opacity: 0.5;
 }
 .make-order{
+    padding: 12px 0;
     background-color: #63a63e;
+    margin-right: 0;
+}
+
+.make-order:hover{
+    background-color: #5fbb2d;
 }
 
 .secondary-header{
@@ -56,6 +86,8 @@ body{
 }
 
 .tagline{
+    width: 200px;
+    margin-left: 50px;
     font-family: 'Cuprum', sans-serif;
     font-style: italic;
     color: #ee3643;
@@ -63,9 +95,11 @@ body{
 }
 
 .phone{
+    padding: 13px 50px 13px 65px;
+    width: 270px;
     font-size: 21px;
     color: #ee3643;
-    border: 2px solid white;
+    border: 4px solid white;
 }
 
 .address{
@@ -74,6 +108,8 @@ body{
 }
 
 .registration{
+    padding: 15px 25px;
+    margin-right: 10px;
     color: black;
     font-size: 21px;
     text-decoration: none;
@@ -89,74 +125,138 @@ body{
     color: #c7c7c7;
 }
 
+.full{
+    width: 100%;
+    background-image: url("img/advantages.png");
+    background-position: 0 0;
+}
+
+.main-navigation{
+    margin: 0 auto;
+}
+
 .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 auto;
     list-style: none;
 
     color: white;
     font-size: 17px;
 
+    width: 940px;
+    height: 60px;
+    background-color: #32425c;
     background-image: url("img/header-navigation.png");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
 h2{
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: 'Cuprum', sans-serif;
     font-size: 30px;
-    font-weight: normal;
+    font-weight: lighter;
     text-transform: uppercase;
 }
 
 h3{
     font-size: 36px;
+    margin-top: 15px;
     font-family: 'Cuprum', sans-serif;
     color: #32425c;
     text-transform: uppercase;
 
 }
 
+
 .advantages{
-    background-image: url("img/advantages.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    width: 940px;
+    margin: 80px auto;
+    padding-top: 70px;
 }
 
 .advantages-tagline{
+    width: 249px;
     font-family: 'Cuprum', sans-serif;
     font-size: 13px;
 }
 
-.advantages-list{
+.company-tagline{
+    width: 525px;
+}
+
+.no-style-list{
+    padding-inline-start: 0px;
     list-style: none;
 }
+
+.no-style-list li{
+    margin-top: 17px;
+}
 .advantages-button {
+    width: 240px;
+    min-height: 45px;
+    margin: 0;
+    border: none;
     font-family: 'Cuprum', sans-serif;
+    text-align: left;
+    padding-left: 20px;
     font-size: 21px;
     color: #f1f2f4;
-    font-weight: bold;
+    font-weight: normal;
+
 
     background-color: #32425c;
-    background-position: 0 0;
-    background-repeat: no-repeat;
+}
+
+.active{
+    background-image: none;
+    background-color: #f3f7f8;
+    color: #32425c;
 }
 
 .advantages-button:hover{
+
     color: white;
     background-color: #293449;
 }
 
-.company h2{
-    font-family: 'Cuprum', sans-serif;
-    font-weight: bold;
+.interactive{
+    margin-top: 0;
+    margin-left: 80px;
+}
+
+.advantages-interactive{
+    display: flex;
+}
+
+.interactive-image{
+    margin-left: -110px;
+}
+
+.company{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .transport-company{
     list-style: none;
 
     font-size: 18px;
+
+    margin-bottom: 50px;
+}
+
+.transport-company li{
+    font-size: 18px;
 }
 
 .red-button{
+    padding: 15px 40px;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -164,19 +264,77 @@ h3{
     border-radius: 2px;
 }
 
-.main-footer{
+.location{
+    padding: 15px 70px;
+}
 
-    background-image: url("img/main-footer.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+.do-it-yourself{
+    width: 180px;
 }
 
 footer{
+    width: 100%;
+    background-color: #32425c;
     color: white;
     font-size: 18px;
     font-family: 'Cuprum', sans-serif;
 }
+
+.main-footer{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.main-footer div{
+    display: flex;
+}
+
+.logo-footer{
+    text-align: center;
+    vertical-align: center;
+    padding: 20px 0;
+    width: 220px;
+    height: 68px;
+    background-image: url("img/logo-footer-bg.png");
+}
+
+.main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.center{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.center p{
+    font-size: 16px;
+}
+
+.flex{
+    display: flex;
+}
+
+article{
+    width: 220px;
+    border: 1px solid #e5e5e5;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
 }
 .no-underline{
@@ -194,10 +352,298 @@ footer{
 
 .secondary-footer{
     background-image: url("img/second-footer.png");
-    /*background-repeat: no-repeat;*/
     background-position: 0 0;
 }
 
 .socials{
+    flex-grow: 1;
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.me{
+    width: 300px;
+    line-height: 45px;
+    background-color: white;
+}
+
+.name{
+    font-family: 'Cuprum', sans-serif;
+    font-size: 21px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.name:active{
+    color: #b2b2b2;
+}
+.my{
+    color: #32425c;
+    font-size: 16px;
+}
+.my:hover{
+    color: #ee3643;
+}
+.my:active{
+    color: #b7bfc8;
+}
+
+.way{
+    vertical-align: middle;
+    padding: 0;
+    min-height: 60px;
+    list-style: none;
+    font-size: 13px;
+}
+.way-item-main a:before{
+    content: url("img/icon-home.svg");
+    margin-top: 22px;
+}
+.way li{
+    margin-top: 22px;
+}
+.way-item{
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+}
+
+.way-item:before{
+    content: url("img/icon-right-small.svg");
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.way-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.way-item-main{
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+}
+.way-item:before{
+}
+.way-item-main a{
+    text-decoration: none;
+    color: black;
+}
+
+.category-of-product{
+    width: 940px;
+    margin: 0 auto;
+    background-color: #f2f6f8;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 30px;
+    line-height: 100px;
+}
+
+.producers{
+    border: none;
+    border-top: 1px solid #e5e5e5;
+}
+
+.characteristic{
+    text-transform: uppercase;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+}
+.bold{
+    font-weight: bold;
+}
+.producers label{
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.white-button{
+    width: 140px;
+    min-height: 40px;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+}
+
+.buy{
+    color: #eaf3e5;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    vertical-align: middle;
+
+    background-color: #63a63e;
+
+    box-shadow: 0 5px 0 #367315;
+}
+.buy:hover{
+    color: white;
+    background-color: #5fbb2d;
+}
+.buy:active{
+    background-color: #367315;
+}
+
+.more{
+    flex-grow: 2;
+}
+
+.mark{
+    font-family: 'Cuprum', sans-serif;
+    font-size: 14px;
+    color: #32425c;
+    text-decoration: none;
+
+    background-color: white;
+
+    border: 2px solid #63a63e;
+}
+.mark:hover{
+    border-color: #32425c;
+}
+.mark:hover{
+    color: #c1c6ce;
+    border-color: #c1c6ce;
+}
+
+.five{
+    width: 200px;
+}
+
+.name-of-product{
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.old-price{
+    width: 200px;    min-height: 38px;
+    padding-top: 8px;
+    padding-left: 30px;
+
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #999999;
+    text-decoration: line-through;
+}
+.price{
+    width: 200px;
+    background-image: url("img/btn copy 14.png");
+    background-position: 40px 0;
+    background-repeat: no-repeat;
+
+    min-height: 38px;
+    padding-top: 8px;
+    padding-left: 30px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+}
+
+.phone-footer{
+    color: #f3f7f8;
+    text-decoration: none;
+}
+header{
+    background-color: #293449;
+}
+.main-header{
+}
+
+.second{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left form{
+    display: inline;
+}
+
+.way{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contacts{
+    margin-top: 46px;
+    width: 270px;
+}
+
+.copyright{
+    width: 233px;
+}
+
+main{
+    margin: 40px;
+}
+
+.services-tagline{
+    width: 370px;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 13px;
+    margin-bottom: 80px;
+}
+
+.none{
+    display: none;
+}
+
+.filter-price{
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.pages-list{
+    padding-left: 20px;
+    display: flex;
     list-style: none;
 }
+
+.page{
+    border-radius: 5px;
+    width: 38px;
+    line-height: 40px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    margin-right: 10px;
+}
+.page:active{
+    border-color: #ee3643;
+}
+.next{
+    width: 140px;
+}
+
+.page-active{
+    border-radius: 5px;
+    color: #fef2f2;
+    background-color: #ee3643;
+    width: 38px;
+    line-height: 40px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.active-red:active{
+    color: #ee3643;
+    text-decoration: none;
+}
+
+.advantages-list{
+    padding-inline-start: 0px;
+    list-style: none;
+}
+
+.couple-of-words{
+    width: 940px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
