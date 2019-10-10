@@ -2000,6 +2000,7 @@ input[name="search"]:focus{
     margin-bottom: 25px;
 }
 
+
 .trans-left{
     transform: translateX(-90px);
     transition-duration: 1s;
