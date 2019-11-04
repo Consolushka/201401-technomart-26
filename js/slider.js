@@ -2,8 +2,9 @@ var buttonLeft = document.querySelector(".left-arrow");
 var buttonRight = document.querySelector(".right-arrow");
 var cardsArray = document.querySelectorAll(".card");
 var activeCard = document.querySelector(".card.active");
-var ActiveList = document.querySelector(".number-of-img.active");
-var list = document.querySelectorAll(".number-of-img");
+var ActiveList = document.querySelector(".list-img");
+console.log(ActiveList);
+var list = document.querySelectorAll(".list-img");
 var notActiveList;
 var notActiveCard;
 for (var i = 0; i < cardsArray.length; i++) {
@@ -19,10 +20,10 @@ for (var i = 0; i < cardsArray.length; i++) {
 for (var i = 0; i < list.length; i++) {
     if (list[i] === ActiveList) {
         if (i === 0) {
-            notActiveList= list[1];
+            notActiveList = list[1];
         }
         else {
-            notActiveList= list[0];
+            notActiveList = list[0];
         }
     }
 }
@@ -30,24 +31,24 @@ buttonLeft.addEventListener("click", function () {
     activeCard.classList.remove("active");
     notActiveCard.classList.add("active");
     var dop = notActiveCard;
-    notActiveCard=activeCard;
-    activeCard=dop;
+    notActiveCard = activeCard;
+    activeCard = dop;
     ActiveList.classList.remove("active");
     notActiveList.classList.add("active");
     var dop1 = notActiveList;
-    notActiveList=ActiveList;
-    ActiveList=dop1;
+    notActiveList = ActiveList;
+    ActiveList = dop1;
 })
 
-buttonRight.addEventListener("click", function(){
+buttonRight.addEventListener("click", function () {
     activeCard.classList.remove("active");
     notActiveCard.classList.add("active");
     var dop = notActiveCard;
-    notActiveCard=activeCard;
-    activeCard=dop;
+    notActiveCard = activeCard;
+    activeCard = dop;
     ActiveList.classList.remove("active");
     notActiveList.classList.add("active");
     var dop1 = notActiveList;
-    notActiveList=ActiveList;
-    ActiveList=dop1;
+    notActiveList = ActiveList;
+    ActiveList = dop1;
 })

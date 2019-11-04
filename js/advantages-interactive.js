@@ -7,7 +7,7 @@ var advantagesButtonArray = document.querySelectorAll(".advantages-button"),
 
 for (var i = 0; i < advantagesButtonArray.length; i++) {
     var cur = advantagesButtonArray[i],
-    tabId = cur.dataset.tabId;
+        tabId = cur.dataset.tabId;
 
     advList[tabId] = document.querySelector(".advantage." + tabId);
     imageList[tabId] = document.querySelector(".interactive-image." + tabId);
