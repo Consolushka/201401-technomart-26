@@ -993,6 +993,7 @@ div.logo-footer {
 
 .second-contacts {
   margin-top: 16px;
+  margin-left: 2px;
 }
 
 .second-nav {
@@ -1448,7 +1449,7 @@ section.second {
   min-height: 38px;
   padding-top: 7px;
   margin-left: 42px;
-  margin-top: -18px;
+  margin-top: -17px;
   padding-left: 7px;
   font-family: "PT Sans", "Arial Narrow", sans-serif;
   font-weight: 700;
@@ -1459,7 +1460,7 @@ section.second {
 .price::after {
   position: absolute;
   content: "";
-  top: 257px;
+  top: 258px;
   right: 17px;
   width: 0;
   height: 0;
@@ -1538,7 +1539,7 @@ section.second {
 
 
 .right {
-  margin-left: 16px;
+  margin-left: 12px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1605,7 +1606,7 @@ main {
 
 .pages-list {
   padding-left: 0;
-  margin-top: 55px;
+  margin-top: 53px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1685,7 +1686,7 @@ main {
 .couple-of-words {
   padding-top: 32px;
   padding-bottom: 55px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .couple-of-words p {
@@ -1727,11 +1728,11 @@ main {
 }
 
 .basket {
-  width: 155px;
+  width: 150px;
   color: #f1f2f4;
   padding-right: 18px;
   text-decoration: none;
-  margin-left: -6px;
+  margin-left: -3px;
   padding-left: 14px;
 }
 
@@ -1920,7 +1921,6 @@ main {
   font-weight: 700;
   margin-top: -3px;
   margin-bottom: 16px;
-  letter-spacing: 0.9px;
 }
 
 .store-card-more {
@@ -3322,6 +3322,14 @@ input[name="search"]:focus {
   background-color: #f7f3ec;
   width: 95px;
   margin-bottom: 25px;
+}
+
+.value input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding-left: 2px;
+  text-align: center;
 }
 
 .range-minus {

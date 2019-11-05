@@ -89,8 +89,7 @@ for (var i = 0; i < cardsArray.length; i++) {
   if (cardsArray[i] === activeCard) {
     if (i === 0) {
       notActiveCard = cardsArray[1];
-    }
-    else {
+    } else {
       notActiveCard = cardsArray[0];
     }
   }
@@ -99,8 +98,7 @@ for (var i = 0; i < list.length; i++) {
   if (list[i] === ActiveList) {
     if (i === 0) {
       notActiveList = list[1];
-    }
-    else {
+    } else {
       notActiveList = list[0];
     }
   }
