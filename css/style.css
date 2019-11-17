@@ -226,7 +226,8 @@ div.clogo:active {
 .button {
   display: block;
   height: 39px;
-  padding: 9px 0 0 24px;
+  text-align: center;
+  padding-top: 9px;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
@@ -698,13 +699,13 @@ h2.heading {
   border-radius: 4px;
   margin-left: -2px;
   width: 195px;
-  padding: 7px 0 0 47px;
+  padding-top: 7px;
 }
 
 .location {
   display: block;
   width: 300px;
-  padding: 7px 0 0 66px;
+  padding-top: 7px;
   margin-top: 31px;
 }
 
@@ -1328,7 +1329,7 @@ div.logo-footer {
 .button-primary.more {
   display: block;
   height: 38px;
-  padding: 6px 0 0 40px;
+  padding-top: 6px;
   margin-top: -8px;
   width: 220px;
   min-height: 38px;
@@ -1882,7 +1883,7 @@ main {
 }
 
 
-.cards .button{
+.store-card .button{
   width: 140px;
 }
 .button.button-primary{
@@ -2534,24 +2535,18 @@ button.close {
   background-color: #ee3643;
 }
 
-.open-big-card {
+.button-primary.open-big-card {
   display: none;
   letter-spacing: 0.1px;
-  text-decoration: none;
   top: 46px;
   position: relative;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #ffffff;
   margin-bottom: -25px;
   margin-right: 20px;
   padding-left: 5px;
   padding-top: 8px;
   padding-bottom: 8px;
   width: 195px;
-  background-color: #ee3643;
   border-radius: 5px;
-  border: none;
   text-align: center;
 }
 
@@ -2636,13 +2631,13 @@ button.close {
   padding-bottom: 23px;
 }
 .popular .button-primary{
-  padding: 10px 0 0 55px;
+  padding-top: 10px;
   width: 252px;
   border-radius: 3px;
   font-size: 14px;
 }
 .popular .button-primary.popular-manufactures{
-  padding: 8px 0 0 68px;
+  padding-top: 8px;
 }
 .popular-button {
   height: 40px;
